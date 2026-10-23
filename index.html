@@ -125,7 +125,7 @@ async function fabelLoadOnline(show){
   if(r.error){if(show)fabelStatus("Could not load store data: "+r.error.message);return;}
   if(r.data&&r.data.payload){
     const p=r.data.payload;
-    if(Array.isArray(p.products)&&p.products.length){products.splice(0,products.length,...p.products);}
+    if(Array.isArray(p.products)){products.splice(0,products.length,...p.products);}
     if(p.settings)fabelSettings=Object.assign({},fabelSettings,p.settings);
     if(Array.isArray(p.banners)&&p.banners[0]){const b=p.banners[0];fabelSettings.heroEyebrow=b.eyebrow||fabelSettings.heroEyebrow;fabelSettings.heroTitle=b.title||fabelSettings.heroTitle;fabelSettings.heroDescription=b.description||fabelSettings.heroDescription;fabelSettings.heroImage=b.image||fabelSettings.heroImage;}
     fabelApplySettings();render();if(show)fabelStatus("Loaded the latest online store content.");
