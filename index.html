@@ -9,6 +9,34 @@
 <style>
 :root{--bg:#f6f5f2;--ink:#171717;--muted:#77756f;--line:#deddd7;--accent:#f04478;--card:#eeede8;--white:#fff;--radius:18px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Arial,Helvetica,sans-serif}button,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:auto;padding:0 20px}.announcement{text-align:center;background:#171717;color:white;padding:9px 12px;font-size:10px;letter-spacing:1.7px;text-transform:uppercase}.header{position:sticky;top:0;z-index:10;background:rgba(246,245,242,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:14px}.wordmark{font-size:26px;font-weight:900;letter-spacing:5px}.navlinks{display:flex;gap:25px;text-transform:uppercase;font-size:10px;letter-spacing:1.3px}.actions{display:flex;gap:8px}.iconbtn{border:1px solid var(--line);background:transparent;border-radius:50px;width:39px;height:39px;display:grid;place-items:center;position:relative}.count{position:absolute;right:-3px;top:-4px;background:var(--ink);color:white;border-radius:20px;min-width:17px;height:17px;font-size:10px;display:grid;place-items:center;padding:0 4px}.hero{padding:26px 0 34px}.heroart{min-height:420px;border-radius:24px;overflow:hidden;background:linear-gradient(115deg,#d8d2c7 0%,#c5beb1 46%,#8e8b80 100%);position:relative;display:flex;align-items:flex-end;padding:clamp(24px,5vw,58px);isolation:isolate}.heroart:before{content:"";position:absolute;z-index:-1;right:7%;top:7%;width:40%;height:100%;background:linear-gradient(145deg,#3b3b38,#151515 60%,#56534c);clip-path:polygon(25% 0,72% 4%,100% 34%,82% 100%,9% 100%,0 33%);opacity:.88}.heroart:after{content:"F";position:absolute;right:14%;top:7%;font-size:clamp(180px,32vw,390px);font-weight:900;color:rgba(255,255,255,.08);line-height:1;z-index:-1}.hero-copy{max-width:490px}.eyebrow{font-size:10px;letter-spacing:2.2px;text-transform:uppercase}.hero h1{font-size:clamp(42px,7vw,83px);line-height:.93;letter-spacing:-4px;margin:18px 0 16px;max-width:520px}.hero p{max-width:310px;color:#34332f;font-size:14px}.btn{border:1px solid var(--ink);background:var(--ink);color:white;padding:14px 20px;border-radius:99px;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;gap:10px}.btn.light{background:transparent;color:var(--ink)}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:28px 0 18px}.sectionhead h2{font-size:27px;letter-spacing:-1px;margin:0}.sectionhead p{margin:5px 0 0;color:var(--muted);font-size:12px}.categories{display:flex;gap:8px;overflow:auto;padding:0 0 6px;scrollbar-width:none}.categories button{white-space:nowrap;border:1px solid var(--line);background:transparent;padding:10px 15px;border-radius:99px;font-size:11px}.categories button.active{background:var(--ink);color:white;border-color:var(--ink)}.toolbar{display:flex;gap:10px;margin:18px 0}.search{flex:1;min-width:0;border:1px solid var(--line);border-radius:99px;padding:12px 16px;background:transparent;outline:none}.sort{border:1px solid var(--line);border-radius:99px;padding:0 12px;background:transparent;max-width:140px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:25px 14px}.product{min-width:0}.visual{aspect-ratio:3/4;border-radius:15px;background:var(--card);position:relative;overflow:hidden;display:grid;place-items:center}.visual img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}.product:hover .visual img{transform:scale(1.035)}.fallback{font-size:60px;font-weight:900;letter-spacing:-5px;color:#c4c1b8}.tag{position:absolute;top:10px;left:10px;background:var(--bg);padding:6px 8px;border-radius:4px;font-size:9px;text-transform:uppercase;letter-spacing:1px}.heart{position:absolute;right:9px;top:9px;border:0;border-radius:50%;background:rgba(246,245,242,.94);width:34px;height:34px;font-size:18px;display:grid;place-items:center;color:#222}.heart.on{color:var(--accent)}.quick{position:absolute;bottom:10px;left:10px;right:10px;border:0;border-radius:99px;background:rgba(246,245,242,.96);padding:11px 6px;font-size:10px;text-transform:uppercase;letter-spacing:1px}.productinfo{padding:11px 2px}.productname{font-size:12px;font-weight:600}.productmeta{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-size:12px}.muted{color:var(--muted)}.empty{padding:48px 12px;text-align:center;color:var(--muted);grid-column:1/-1}.featurebar{margin:56px 0;background:#e8e5dd;padding:27px 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-radius:18px}.featurebar strong{display:block;font-size:12px;margin-bottom:5px}.featurebar span{color:var(--muted);font-size:11px}.footer{border-top:1px solid var(--line);margin-top:60px;padding:30px 0 38px;display:flex;justify-content:space-between;gap:20px;align-items:center}.footer .wordmark{font-size:21px}.footer p{font-size:10px;color:var(--muted)}.overlay{position:fixed;inset:0;background:rgba(0,0,0,.38);z-index:30;display:none;justify-content:flex-end}.overlay.open{display:flex}.drawer{background:var(--bg);width:min(440px,100%);height:100%;overflow:auto;padding:22px;animation:slide .2s ease}.drawerhead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:17px;margin-bottom:18px}.drawerhead h2{font-size:22px;margin:0}.close{border:1px solid var(--line);background:transparent;border-radius:50%;width:36px;height:36px;font-size:20px}.lineitem{display:grid;grid-template-columns:84px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}.thumb{aspect-ratio:3/4;background:var(--card);border-radius:10px;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover}.lineitem strong{font-size:12px}.lineitem small{display:block;color:var(--muted);margin-top:5px}.qty{display:flex;align-items:center;gap:9px;margin-top:10px}.qty button{background:transparent;border:1px solid var(--line);border-radius:50%;width:25px;height:25px}.remove{border:0;background:none;color:var(--muted);font-size:11px;margin-top:9px;text-decoration:underline}.drawerbottom{position:sticky;bottom:-22px;background:var(--bg);padding:18px 0 22px;margin-top:20px;border-top:1px solid var(--line)}.total{display:flex;justify-content:space-between;font-weight:700;margin-bottom:14px}.drawerbottom .btn{width:100%}.hint{font-size:11px;color:var(--muted);margin-top:10px}.detailmodal{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;padding:16px}.detailmodal.open{display:flex}.detailbox{background:var(--bg);width:min(760px,100%);max-height:92vh;overflow:auto;border-radius:20px;position:relative;display:grid;grid-template-columns:1fr 1fr}.detailimage{background:var(--card);min-height:380px}.detailimage img{width:100%;height:100%;object-fit:cover}.detailcopy{padding:34px 28px}.detailcopy h2{font-size:27px;line-height:1.1}.detailcopy p{color:var(--muted);font-size:12px}.sizes{display:flex;gap:8px;margin:22px 0}.sizes button{width:40px;height:38px;border:1px solid var(--line);background:transparent;border-radius:6px}.sizes button.selected{background:var(--ink);color:white}.detailcopy .btn{width:100%;margin-top:10px}.modalclose{position:absolute;top:12px;right:12px;z-index:1}.notice{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:white;padding:12px 18px;border-radius:99px;font-size:12px;opacity:0;pointer-events:none;transition:.2s;z-index:60;white-space:nowrap}.notice.show{opacity:1;transform:translate(-50%,0)}.checkoutform{display:grid;gap:12px}.checkoutform label{font-size:11px;color:var(--muted)}.checkoutform input,.checkoutform textarea{display:block;width:100%;margin-top:6px;border:1px solid var(--line);border-radius:10px;padding:13px;background:transparent;outline:none}.ordercard{padding:15px 0;border-bottom:1px solid var(--line)}.ordercard strong{font-size:12px}.ordercard p{font-size:11px;color:var(--muted)}@keyframes slide{from{transform:translateX(20px);opacity:.6}to{transform:none;opacity:1}}@media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.heroart{min-height:370px}.navlinks{gap:12px}}@media(max-width:600px){.wrap{padding:0 14px}.nav{height:61px}.wordmark{font-size:23px;letter-spacing:4px}.navlinks{display:none}.hero{padding-top:15px}.heroart{min-height:430px;padding:24px}.heroart:before{right:-8%;width:68%;top:16%;height:85%}.heroart:after{right:0;top:18%}.hero h1{font-size:54px;letter-spacing:-3px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 10px}.sectionhead h2{font-size:23px}.featurebar{grid-template-columns:1fr;gap:17px;margin:38px 0}.footer{align-items:flex-start;flex-direction:column;margin-top:40px}.detailbox{grid-template-columns:1fr;max-width:430px}.detailimage{min-height:240px;max-height:300px}.detailcopy{padding:20px}.detailcopy h2{font-size:23px}.sort{max-width:115px}.quick{font-size:9px}.productname{font-size:11px}}
+
+/* FABEL_SUPABASE_ADMIN_V1 */
+.fabel-admin-fab{position:fixed;right:16px;bottom:16px;z-index:25;border:0;border-radius:999px;background:#171717;color:#fff;padding:12px 16px;font-size:11px;letter-spacing:1px;text-transform:uppercase;box-shadow:0 8px 28px #0002}
+.fabel-admin-shade{position:fixed;inset:0;z-index:60;background:#1119;display:none;align-items:center;justify-content:center;padding:12px}
+.fabel-admin-shade.open{display:flex}
+.fabel-admin-box{background:var(--bg,#f6f5f2);color:var(--ink,#171717);width:min(760px,100%);max-height:92dvh;overflow:auto;border-radius:18px;padding:20px;box-shadow:0 20px 80px #0003}
+.fabel-admin-top{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.fabel-admin-top h2{margin:0;font-size:22px}
+.fabel-admin-tabs{display:flex;gap:8px;overflow:auto;margin-bottom:16px}
+.fabel-admin-tabs button,.fabel-admin-actions button{border:1px solid var(--line);background:transparent;padding:10px 13px;border-radius:999px;font-size:11px;white-space:nowrap}
+.fabel-admin-tabs button.active,.fabel-admin-actions button.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.fabel-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fabel-admin-field{display:flex;flex-direction:column;gap:5px;font-size:11px;color:var(--muted)}
+.fabel-admin-field.full{grid-column:1/-1}
+.fabel-admin-field input,.fabel-admin-field select,.fabel-admin-field textarea{width:100%;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;padding:11px;font:inherit;font-size:13px}
+.fabel-admin-field textarea{min-height:78px;resize:vertical}
+.fabel-admin-list{display:grid;gap:8px;margin:14px 0}
+.fabel-admin-row{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:10px;border-radius:12px}
+.fabel-admin-row img{width:42px;height:52px;object-fit:cover;border-radius:6px;background:var(--card)}
+.fabel-admin-row .meta{flex:1;min-width:0;font-size:12px}
+.fabel-admin-row .meta small{display:block;color:var(--muted);margin-top:4px}
+.fabel-admin-row button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 10px;font-size:10px}
+.fabel-admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.fabel-admin-status{font-size:12px;color:var(--muted);margin:12px 0;overflow-wrap:anywhere}
+.fabel-admin-help{font-size:11px;color:var(--muted);line-height:1.5;margin:10px 0}
+.fabel-announcement{background:#171717;color:#fff;text-align:center;padding:8px 12px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+@media(max-width:520px){.fabel-admin-box{padding:15px}.fabel-admin-grid{grid-template-columns:1fr}.fabel-admin-field.full{grid-column:auto}.fabel-admin-row{align-items:flex-start}.fabel-admin-row button{padding:7px}}
+
 </style>
 </head>
 <body>
@@ -19,12 +47,24 @@
 <section id="shop"><div class="sectionhead"><div><div class="eyebrow">Curated for you</div><h2>The latest edit</h2><p>Find your next everyday favourite.</p></div><span class="muted" id="resultCount"></span></div><div class="categories" id="categories"><button class="active" data-category="All">All pieces</button><button data-category="Tops">Tops</button><button data-category="Bottoms">Bottoms</button><button data-category="Outerwear">Outerwear</button><button data-category="Accessories">Accessories</button></div><div class="toolbar"><input id="searchInput" class="search" type="search" placeholder="Search the collection…" aria-label="Search products"><select id="sortSelect" class="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select></div><div class="grid" id="productGrid"></div></section>
 <section class="featurebar" id="about"><div><strong>01 — Made for repeat wear</strong><span>Easy pieces that work hard in your wardrobe.</span></div><div><strong>02 — Less, but better</strong><span>A considered edit with everyday versatility.</span></div><div><strong>03 — Your style, your call</strong><span>Make the look yours. Always.</span></div></section>
 </main>
+
+<div id="fabelAnnouncement" class="fabel-announcement">FREE SHIPPING ON ORDERS ABOVE ₹2,999</div>
+<button type="button" id="fabelAdminOpen" class="fabel-admin-fab">⚙ Admin</button>
+<div id="fabelAdminShade" class="fabel-admin-shade" role="dialog" aria-modal="true" aria-label="Fabel store admin">
+  <section class="fabel-admin-box">
+    <div class="fabel-admin-top"><div><div class="eyebrow">FABEL STORE MANAGEMENT</div><h2>Store admin</h2></div><button type="button" id="fabelAdminClose" class="close" aria-label="Close">×</button></div>
+    <div id="fabelAdminContent"></div>
+    <div id="fabelAdminStatus" class="fabel-admin-status">Connect to your store database to manage products.</div>
+  </section>
+</div>
+
 <footer class="wrap footer"><div><div class="wordmark">FABEL</div><p>Everyday, reimagined.</p></div><div><p>Independent style. Made for your everyday.</p><p>© 2026 FABEL · Demo storefront</p></div></footer>
 <div class="overlay" id="drawerOverlay" role="dialog" aria-modal="true" aria-label="Shopping panel"><aside class="drawer"><div class="drawerhead"><h2 id="drawerTitle">Your bag</h2><button class="close" id="drawerClose" aria-label="Close">×</button></div><div id="drawerContent"></div><div id="drawerBottom" class="drawerbottom" hidden></div></aside></div>
 <div class="detailmodal" id="detailModal" role="dialog" aria-modal="true" aria-label="Product details"><div class="detailbox" id="detailBox"></div></div>
 <div class="notice" id="notice" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const products=[
+let products=[
 {id:1,name:"Essential Boxy Tee",category:"Tops",price:599,old:799,color:"Washed black",tag:"Bestseller",image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=85",desc:"A relaxed everyday tee with a clean shape, soft feel and just-right weight."},
 {id:2,name:"Everyday Oversized Tee",category:"Tops",price:699,old:899,color:"Natural white",tag:"New",image:"https://images.unsplash.com/photo-1527719327859-c6ce80353573?auto=format&fit=crop&w=800&q=85",desc:"An easy oversized fit made for effortless layering and off-duty days."},
 {id:3,name:"Relaxed Utility Pants",category:"Bottoms",price:1299,old:1599,color:"Stone",tag:"Popular",image:"https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=85",desc:"A versatile relaxed-leg silhouette that pairs with almost anything."},
@@ -54,6 +94,122 @@ function closeDetail(){$("#detailModal").classList.remove("open")}
 document.addEventListener("click",e=>{const wish=e.target.closest("[data-wish]");if(wish){toggleWish(Number(wish.dataset.wish));return}const detail=e.target.closest("[data-detail]");if(detail){openDetail(Number(detail.dataset.detail));return}const qty=e.target.closest("[data-qty]");if(qty){const id=Number(qty.dataset.qty),item=cart.find(x=>x.id===id),delta=Number(qty.dataset.delta);if(item){item.qty+=delta;if(item.qty<1)cart=cart.filter(x=>x!==item);persist();renderDrawer()}return}const remove=e.target.closest("[data-wish-remove]");if(remove){toggleWish(Number(remove.dataset.wishRemove));return}const add=e.target.closest("[data-add]");if(add){addCart(Number(add.dataset.add),"M");return}const cat=e.target.closest("[data-category]");if(cat){activeCategory=cat.dataset.category;document.querySelectorAll("[data-category]").forEach(b=>b.classList.toggle("active",b===cat));render();return}const filter=e.target.closest("[data-filter-link]");if(filter){activeCategory=filter.dataset.filterLink;document.querySelectorAll("[data-category]").forEach(b=>b.classList.toggle("active",b.dataset.category===activeCategory));render();return}const size=e.target.closest("[data-size]");if(size){selectedSize=size.dataset.size;document.querySelectorAll("[data-size]").forEach(b=>b.classList.toggle("selected",b===size));return}if(e.target.id==="detailClose"||e.target.id==="detailModal")closeDetail();if(e.target.id==="addFromDetail"){addCart(detailId,selectedSize);closeDetail();openDrawer("cart")}if(e.target.id==="wishFromDetail"){toggleWish(detailId);openDetail(detailId)}if(e.target.id==="checkoutStart"){drawerMode="checkout";$("#drawerTitle").textContent="Delivery details";renderDrawer()}});
 $("#searchInput").addEventListener("input",render);$("#sortSelect").addEventListener("change",render);$("#searchFocus").addEventListener("click",()=>{$("#searchInput").focus();$("#shop").scrollIntoView({behavior:"smooth"})});$("#cartOpen").addEventListener("click",()=>openDrawer("cart"));$("#wishlistOpen").addEventListener("click",()=>openDrawer("wishlist"));$("#drawerClose").addEventListener("click",closeDrawer);$("#drawerOverlay").addEventListener("click",e=>{if(e.target.id==="drawerOverlay")closeDrawer()});document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeDrawer();closeDetail()}});
 $("#drawerContent").addEventListener("submit",e=>{if(e.target.id!=="checkoutForm")return;e.preventDefault();if(!cart.length){toast("Your bag is empty");return}const f=new FormData(e.target);const order={id:"FB"+Date.now().toString().slice(-7),date:new Date().toLocaleDateString("en-IN"),status:"Received (demo)",name:f.get("name").trim(),phone:f.get("phone").trim(),pin:f.get("pin").trim(),address:f.get("address").trim(),items:cartItems().map(p=>({id:p.id,name:p.name,qty:p.qty,size:p.size,price:p.price})),total:cartItems().reduce((s,p)=>s+p.price*p.qty,0)};orders.push(order);cart=[];persist();drawerMode="orders";$("#drawerTitle").textContent="Order received";renderDrawer();toast("Demo order placed successfully")});
+
+/* FABEL_SUPABASE_ADMIN_V1 */
+const FABEL_SUPABASE_URL = "https://rxtxyltywwfppaastfyn.supabase.co";
+const FABEL_SUPABASE_KEY = "sb_publishable_Mo7SOjDPOZUt5bHrHzMX7w_Pm3C0L-i";
+const FABEL_ADMIN_UID = "5e465c5d-2fb8-4374-823e-2fb5a03c2339";
+let fabelSupabase = null, fabelAdminUser = null, fabelAdminTab = "products", fabelEditingId = null;
+let fabelSettings = {storeName:"FABEL",logoText:"FABEL",announcement:"FREE SHIPPING ON ORDERS ABOVE ₹2,999",primaryColor:"#171717",backgroundColor:"#f6f5f2",textColor:"#171717",fontFamily:"Arial, Helvetica, sans-serif",heroEyebrow:"The FABEL everyday edit · 2026",heroTitle:"Wear your own rules.",heroDescription:"Modern essentials for wherever the day takes you. Easy silhouettes, thoughtful details, no extra noise.",heroImage:""};
+function fabelSb(){if(!window.supabase){fabelStatus("Supabase library did not load. Check your internet connection.");return null;}if(!fabelSupabase)fabelSupabase=window.supabase.createClient(FABEL_SUPABASE_URL,FABEL_SUPABASE_KEY);return fabelSupabase;}
+function fabelStatus(t){const n=document.getElementById("fabelAdminStatus");if(n)n.textContent=t;}
+function fabelEscape(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function fabelApplySettings(){
+  document.documentElement.style.setProperty("--ink",fabelSettings.primaryColor||"#171717");
+  document.documentElement.style.setProperty("--bg",fabelSettings.backgroundColor||"#f6f5f2");
+  document.documentElement.style.setProperty("--white",fabelSettings.backgroundColor||"#fff");
+  document.documentElement.style.setProperty("--font",fabelSettings.fontFamily||"Arial, Helvetica, sans-serif");
+  document.body.style.fontFamily=fabelSettings.fontFamily||"Arial, Helvetica, sans-serif";
+  document.querySelectorAll(".wordmark").forEach(function(n){n.textContent=fabelSettings.logoText||"FABEL";});
+  const a=document.getElementById("fabelAnnouncement");if(a){a.textContent=fabelSettings.announcement||"";a.style.display=fabelSettings.announcement?"block":"none";}
+  const e=document.querySelector(".hero .eyebrow"),h=document.querySelector(".hero h1"),p=document.querySelector(".hero p"),art=document.querySelector(".heroart");
+  if(e)e.textContent=fabelSettings.heroEyebrow||"";
+  if(h)h.innerHTML=fabelEscape(fabelSettings.heroTitle||"").replace(/\n/g,"<br>");
+  if(p)p.textContent=fabelSettings.heroDescription||"";
+  if(art&&fabelSettings.heroImage){art.style.backgroundImage="linear-gradient(90deg,rgba(246,245,242,.20),rgba(246,245,242,.02)),url('"+String(fabelSettings.heroImage).replace(/['()]/g,"")+"')";art.style.backgroundSize="cover";art.style.backgroundPosition="center";}
+}
+function fabelCurrentPayload(){return {products:products,banners:[{eyebrow:fabelSettings.heroEyebrow,title:fabelSettings.heroTitle,description:fabelSettings.heroDescription,image:fabelSettings.heroImage}],settings:fabelSettings,updatedAt:new Date().toISOString()};}
+async function fabelLoadOnline(show){
+  const sb=fabelSb();if(!sb)return;
+  const r=await sb.from("store_data").select("payload").eq("id",1).maybeSingle();
+  if(r.error){if(show)fabelStatus("Could not load store data: "+r.error.message);return;}
+  if(r.data&&r.data.payload){
+    const p=r.data.payload;
+    if(Array.isArray(p.products)&&p.products.length){products.splice(0,products.length,...p.products);}
+    if(p.settings)fabelSettings=Object.assign({},fabelSettings,p.settings);
+    if(Array.isArray(p.banners)&&p.banners[0]){const b=p.banners[0];fabelSettings.heroEyebrow=b.eyebrow||fabelSettings.heroEyebrow;fabelSettings.heroTitle=b.title||fabelSettings.heroTitle;fabelSettings.heroDescription=b.description||fabelSettings.heroDescription;fabelSettings.heroImage=b.image||fabelSettings.heroImage;}
+    fabelApplySettings();render();if(show)fabelStatus("Loaded the latest online store content.");
+  }else if(show){fabelStatus("No online store content yet. Sign in as admin and tap Save all online to publish the current catalogue.");}
+}
+function fabelOpenAdmin(){document.getElementById("fabelAdminShade").classList.add("open");fabelRenderAdmin();}
+function fabelCloseAdmin(){document.getElementById("fabelAdminShade").classList.remove("open");}
+function fabelRenderAdmin(){
+  const root=document.getElementById("fabelAdminContent");
+  if(!fabelAdminUser){
+    root.innerHTML='<p class="fabel-admin-help">Sign in with the designated Supabase admin account to edit the live catalogue. Visitors can view the store, but only this account can save changes.</p><form id="fabelLoginForm" class="fabel-admin-grid"><label class="fabel-admin-field full">Admin email<input id="fabelLoginEmail" type="email" autocomplete="username" required value="rinanmhd07@gmail.com"></label><label class="fabel-admin-field full">Password<input id="fabelLoginPassword" type="password" autocomplete="current-password" required></label><div class="fabel-admin-actions full"><button class="primary" type="submit">Sign in</button></div></form><p class="fabel-admin-help">If you haven't set a password for this Supabase account, use Supabase Auth to set/reset one first. Never share your password in chat.</p>';
+    return;
+  }
+  if(fabelAdminUser.id!==FABEL_ADMIN_UID){root.innerHTML="<p>This account is not the designated Fabel admin.</p><div class='fabel-admin-actions'><button id='fabelSignOut'>Sign out</button></div>";return;}
+  const tabs='<div class="fabel-admin-tabs"><button data-fabel-tab="products" class="'+(fabelAdminTab==="products"?"active":"")+'">Products</button><button data-fabel-tab="homepage" class="'+(fabelAdminTab==="homepage"?"active":"")+'">Homepage</button><button data-fabel-tab="brand" class="'+(fabelAdminTab==="brand"?"active":"")+'">Brand & style</button></div>';
+  let body="";
+  if(fabelAdminTab==="products"){
+    const p=fabelEditingId==null?{id:"",name:"",category:"Tops",price:"",old:"",color:"",tag:"",image:"",desc:""}:(products.find(function(x){return String(x.id)===String(fabelEditingId);})||{});
+    body='<form id="fabelProductForm" class="fabel-admin-grid"><label class="fabel-admin-field">Product name<input name="name" required value="'+fabelEscape(p.name)+'"></label><label class="fabel-admin-field">Category<input name="category" value="'+fabelEscape(p.category||"Tops")+'" required></label><label class="fabel-admin-field">Price (₹)<input name="price" type="number" min="0" step="1" required value="'+fabelEscape(p.price)+'"></label><label class="fabel-admin-field">Compare-at price (₹)<input name="old" type="number" min="0" step="1" value="'+fabelEscape(p.old||"")+'"></label><label class="fabel-admin-field">Colour<input name="color" value="'+fabelEscape(p.color||"")+'"></label><label class="fabel-admin-field">Tag<input name="tag" value="'+fabelEscape(p.tag||"")+'" placeholder="New / Bestseller"></label><label class="fabel-admin-field full">Image URL<input id="fabelProductImage" name="image" type="url" value="'+fabelEscape(p.image||"")+'" placeholder="https://..."></label><label class="fabel-admin-field full">Or upload an image<input id="fabelProductFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/avif"></label><label class="fabel-admin-field full">Description<textarea name="desc">'+fabelEscape(p.desc||"")+'</textarea></label><div class="fabel-admin-actions full"><button class="primary" type="submit">'+(fabelEditingId==null?"Add product":"Update product")+'</button><button type="button" id="fabelNewProduct">Clear form</button></div></form><div class="fabel-admin-list">'+products.map(function(x){return '<div class="fabel-admin-row"><img src="'+fabelEscape(x.image)+'" alt=""><div class="meta"><b>'+fabelEscape(x.name)+'</b><small>'+fabelEscape(x.category)+' · ₹'+fabelEscape(x.price)+'</small></div><button type="button" data-fabel-edit="'+fabelEscape(x.id)+'">Edit</button><button type="button" data-fabel-delete="'+fabelEscape(x.id)+'">Delete</button></div>';}).join("")+'</div>';
+  }else if(fabelAdminTab==="homepage"){
+    body='<form id="fabelHomeForm" class="fabel-admin-grid"><label class="fabel-admin-field full">Announcement bar text<input name="announcement" value="'+fabelEscape(fabelSettings.announcement)+'"></label><label class="fabel-admin-field">Hero eyebrow<input name="heroEyebrow" value="'+fabelEscape(fabelSettings.heroEyebrow)+'"></label><label class="fabel-admin-field">Hero title<input name="heroTitle" value="'+fabelEscape(fabelSettings.heroTitle)+'"></label><label class="fabel-admin-field full">Hero description<textarea name="heroDescription">'+fabelEscape(fabelSettings.heroDescription)+'</textarea></label><label class="fabel-admin-field full">Hero image URL<input id="fabelHeroImage" name="heroImage" type="url" value="'+fabelEscape(fabelSettings.heroImage||"")+'" placeholder="https://..."></label><label class="fabel-admin-field full">Or upload hero image<input id="fabelHeroFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/avif"></label><div class="fabel-admin-actions full"><button type="submit" class="primary">Apply homepage edits</button></div></form>';
+  }else{
+    body='<form id="fabelBrandForm" class="fabel-admin-grid"><label class="fabel-admin-field">Store name<input name="storeName" value="'+fabelEscape(fabelSettings.storeName)+'"></label><label class="fabel-admin-field">Logo text<input name="logoText" value="'+fabelEscape(fabelSettings.logoText)+'"></label><label class="fabel-admin-field">Primary colour<input name="primaryColor" type="color" value="'+fabelEscape(fabelSettings.primaryColor)+'"></label><label class="fabel-admin-field">Background colour<input name="backgroundColor" type="color" value="'+fabelEscape(fabelSettings.backgroundColor)+'"></label><label class="fabel-admin-field">Text colour<input name="textColor" type="color" value="'+fabelEscape(fabelSettings.textColor)+'"></label><label class="fabel-admin-field">Font<select name="fontFamily"><option value="Arial, Helvetica, sans-serif">Arial</option><option value="Inter, Arial, sans-serif">Inter</option><option value="Georgia, serif">Georgia</option><option value="system-ui, sans-serif">System</option></select></label><div class="fabel-admin-actions full"><button class="primary" type="submit">Apply brand settings</button></div></form>';
+  }
+  root.innerHTML=tabs+body+'<div class="fabel-admin-actions"><button class="primary" type="button" id="fabelSaveOnline">Save all online</button><button type="button" id="fabelSignOut">Sign out</button></div><p class="fabel-admin-help">Changes apply to this page immediately; Save all online publishes them to Supabase for visitors and other devices. Checkout/order tracking is still a demo, not real payment processing.</p>';
+  if(fabelAdminTab==="brand"){const sel=root.querySelector('[name="fontFamily"]');if(sel)sel.value=fabelSettings.fontFamily||"Arial, Helvetica, sans-serif";}
+}
+async function fabelUploadFile(file){
+  const sb=fabelSb();if(!sb||!file)return null;
+  if(file.size>10*1024*1024){fabelStatus("Image must be 10 MiB or smaller.");return null;}
+  if(!/^image\/(jpeg|png|webp|gif|avif)$/.test(file.type)){fabelStatus("Choose a JPG, PNG, WebP, GIF or AVIF image.");return null;}
+  const path=Date.now()+"-"+Math.random().toString(36).slice(2)+"-"+file.name.replace(/[^a-zA-Z0-9._-]/g,"-");
+  const up=await sb.storage.from("store-images").upload(path,file,{upsert:false,contentType:file.type});
+  if(up.error){fabelStatus("Image upload failed: "+up.error.message);return null;}
+  return sb.storage.from("store-images").getPublicUrl(path).data.publicUrl;
+}
+document.getElementById("fabelAdminOpen").addEventListener("click",fabelOpenAdmin);
+document.getElementById("fabelAdminClose").addEventListener("click",fabelCloseAdmin);
+document.getElementById("fabelAdminShade").addEventListener("click",function(e){if(e.target.id==="fabelAdminShade")fabelCloseAdmin();});
+document.getElementById("fabelAdminContent").addEventListener("click",async function(e){
+  const tab=e.target.closest("[data-fabel-tab]");if(tab){fabelAdminTab=tab.dataset.fabelTab;fabelEditingId=null;fabelRenderAdmin();return;}
+  if(e.target.id==="fabelNewProduct"){fabelEditingId=null;fabelRenderAdmin();return;}
+  const edit=e.target.closest("[data-fabel-edit]");if(edit){fabelEditingId=edit.dataset.fabelEdit;fabelAdminTab="products";fabelRenderAdmin();return;}
+  const del=e.target.closest("[data-fabel-delete]");if(del){if(confirm("Delete this product?")){products.splice(0,products.length,...products.filter(function(p){return String(p.id)!==String(del.dataset.fabelDelete);}));render();fabelRenderAdmin();fabelStatus("Product deleted locally. Save all online to publish.");}return;}
+  if(e.target.id==="fabelSaveOnline"){
+    if(!fabelAdminUser||fabelAdminUser.id!==FABEL_ADMIN_UID){fabelStatus("Sign in with the designated admin account first.");return;}
+    const sb=fabelSb();if(!sb)return;fabelStatus("Saving store data online…");
+    const result=await sb.from("store_data").upsert({id:1,payload:fabelCurrentPayload(),updated_at:new Date().toISOString()});
+    if(result.error){fabelStatus("Save failed: "+result.error.message);return;}
+    fabelStatus("Saved online. Refresh the store on another device to see these changes.");return;
+  }
+  if(e.target.id==="fabelSignOut"){const sb=fabelSb();if(sb)await sb.auth.signOut();fabelAdminUser=null;fabelRenderAdmin();fabelStatus("Signed out.");}
+});
+document.getElementById("fabelAdminContent").addEventListener("submit",async function(e){
+  e.preventDefault();const form=e.target,fd=new FormData(form);
+  if(form.id==="fabelLoginForm"){
+    const sb=fabelSb();if(!sb)return;fabelStatus("Signing in…");
+    const res=await sb.auth.signInWithPassword({email:String(fd.get("email")||document.getElementById("fabelLoginEmail").value),password:document.getElementById("fabelLoginPassword").value});
+    if(res.error){fabelStatus("Sign-in failed: "+res.error.message);return;}
+    fabelAdminUser=res.data.user;if(!fabelAdminUser||fabelAdminUser.id!==FABEL_ADMIN_UID){await sb.auth.signOut();fabelAdminUser=null;fabelRenderAdmin();fabelStatus("This account is not the designated Fabel admin.");return;}
+    fabelRenderAdmin();fabelStatus("Signed in as the Fabel admin.");return;
+  }
+  if(form.id==="fabelProductForm"){
+    const p={id:fabelEditingId==null?Date.now():Number(fabelEditingId),name:String(fd.get("name")||"").trim(),category:String(fd.get("category")||"Tops").trim(),price:Number(fd.get("price")||0),old:Number(fd.get("old")||fd.get("price")||0),color:String(fd.get("color")||""),tag:String(fd.get("tag")||""),image:String(fd.get("image")||""),desc:String(fd.get("desc")||"")};
+    const file=document.getElementById("fabelProductFile").files[0];if(file){const url=await fabelUploadFile(file);if(!url)return;p.image=url;}
+    const index=products.findIndex(function(x){return String(x.id)===String(fabelEditingId);});
+    if(index>=0)products[index]=p;else products.push(p);
+    fabelEditingId=null;render();fabelRenderAdmin();fabelStatus("Product updated locally. Tap Save all online to publish.");return;
+  }
+  if(form.id==="fabelHomeForm"){
+    fabelSettings.announcement=String(fd.get("announcement")||"");fabelSettings.heroEyebrow=String(fd.get("heroEyebrow")||"");fabelSettings.heroTitle=String(fd.get("heroTitle")||"");fabelSettings.heroDescription=String(fd.get("heroDescription")||"");fabelSettings.heroImage=String(fd.get("heroImage")||"");
+    const file=document.getElementById("fabelHeroFile").files[0];if(file){const url=await fabelUploadFile(file);if(!url)return;fabelSettings.heroImage=url;}
+    fabelApplySettings();fabelRenderAdmin();fabelStatus("Homepage updated locally. Tap Save all online to publish.");return;
+  }
+  if(form.id==="fabelBrandForm"){
+    fabelSettings.storeName=String(fd.get("storeName")||"FABEL");fabelSettings.logoText=String(fd.get("logoText")||"FABEL");fabelSettings.primaryColor=String(fd.get("primaryColor")||"#171717");fabelSettings.backgroundColor=String(fd.get("backgroundColor")||"#f6f5f2");fabelSettings.textColor=String(fd.get("textColor")||"#171717");fabelSettings.fontFamily=String(fd.get("fontFamily")||"Arial, Helvetica, sans-serif");
+    document.documentElement.style.setProperty("--ink",fabelSettings.textColor);fabelApplySettings();fabelRenderAdmin();fabelStatus("Brand settings applied locally. Tap Save all online to publish.");return;
+  }
+});
+(async function fabelInit(){
+  const sb=fabelSb();if(sb){const session=await sb.auth.getSession();fabelAdminUser=session.data&&session.data.session?session.data.session.user:null;}
+  await fabelLoadOnline(false);
+})();
+
 render();updateCounts();
 </script>
 </body>
